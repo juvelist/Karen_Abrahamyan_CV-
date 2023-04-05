@@ -1,0 +1,108 @@
+@media print {
+  body {
+    background-color: #fff;
+    padding-top: 0;
+  }
+
+  .wrapper {
+    @include box-shadow(0, 0, 0, 0);
+  }
+
+  .print__block {
+    display: none;
+  }
+
+  .main__about {
+    padding-bottom: 200px;
+  }
+
+  .left-block__item-personal {
+    margin-bottom: 70px;
+  }
+
+  .right-block__article-print {
+    padding-bottom: 40px;
+  }
+
+  .right-block__item {
+    margin-bottom: 40px;
+  }
+
+  .portfolio__item {
+    height: 140px;
+
+    &.portfolio__item {
+      &_form {
+        @include bgi('temp/form-css.jpg');
+      }
+
+      &_email {
+        @include bgi('temp/email-html.png');
+      }
+
+      &_projex {
+        @include bgi('temp/projex-css.png');
+      }
+
+      &_notify {
+        @include bgi('temp/notify-css.png');
+      }
+
+      &_waxom {
+        @include bgi('temp/waxom-sass.png');
+      }
+
+      &_reparin {
+        @include bgi('temp/reparin-responsive.png');
+      }
+
+      &_game {
+        @include bgi('temp/gamegleam-landing.png');
+      }
+
+      &_mike {
+        @include bgi('temp/mikeregina-bootstrap3.png');
+      }
+
+      &_mavent {
+        @include bgi('temp/mavent.jpg');
+      }
+
+      &_escape {
+        @include bgi('temp/escape-bootstrap4.png');
+      }
+
+      &_cont {
+        @include bgi('temp/continually.png');
+      }
+
+      &_owl {
+        @include bgi('temp/owl.jpg');
+      }
+
+      &_seriea {
+        @include bgi('temp/seriea.jpg');
+      }
+
+      &_pairs {
+        @include bgi('temp/pairs.jpg');
+      }
+
+      &_vii {
+        @include bgi('temp/vii.jpg');
+      }
+    }
+
+    .portfolio__link {
+      opacity: .7;
+    }
+
+    .portfolio__icon {
+      opacity: 1;
+    }
+  }
+
+  .up-button {
+    opacity: 0;
+  }
+}

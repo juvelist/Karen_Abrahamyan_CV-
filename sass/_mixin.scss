@@ -1,0 +1,102 @@
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+
+@mixin select-none($select: none) {
+  @include css3-prefix('user-select', $select);
+}
+
+@mixin transition-mixin($style: all, $duration: .4s, $type: ease, $delay : 0s) {
+  @include css3-prefix('transition', $style $duration $type $delay);
+}
+
+@mixin bgi($name) {
+  background-image: url('../images/' + $name);
+  background-repeat: no-repeat;
+}
+
+@mixin transform-3d($degX, $degY, $degZ) {
+  @include css3-prefix('transform', translate3d($degX, $degY, $degZ));
+}
+
+@mixin transform-rotate($deg:-90deg) {
+  @include css3-prefix('transform', rotate($deg));
+}
+
+@mixin transform-scale($deg:1) {
+  @include css3-prefix('scale', scale($deg));
+}
+
+@mixin transform-scaleX($deg:1) {
+  @include css3-prefix('scaleX', scale($deg));
+}
+
+@mixin transform-scaleY($deg:1) {
+  @include css3-prefix('scaleY', scale($deg));
+}
+
+
+@mixin background-vertical($startColor: #3C3C3C, $endColor: #999999) {
+  background: -moz-linear-gradient(top, $startColor, $endColor);
+  background: -webkit-linear-gradient(top, $startColor, $endColor);
+  background: linear-gradient(to bottom, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', GradientType=0);
+}
+
+@mixin background-horizontal($startColor: #3C3C3C, $endColor: #999999) {
+  background: -moz-linear-gradient(left, $startColor, $endColor);
+  background: -webkit-linear-gradient(left, $startColor, $endColor);
+  background: linear-gradient(to right, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', GradientType=1);
+}
+
+@mixin background-radial($startColor: #FFFFFF, $startPos: 0%, $endColor: #000000, $endPos:100%) {
+  background: -moz-radial-gradient(center, ellipse cover, $startColor, $endColor);
+  background: -webkit-radial-gradient(center, ellipse cover, $startColor, $endColor);
+  background: radial-gradient(ellipse at center, $startColor, $endColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', GradientType=1);
+}
+
+@mixin box-shadow($x: 2px, $y: 2px, $blur: 5px, $spread: 0, $color: rgba(0,0,0,.4), $inset: "") {
+  @if ($inset != "") {
+    @include css3-prefix('box-shadow', 'inset' $x $y $blur $spread $color);
+  } @else {
+    @include css3-prefix('box-shadow', $x $y $blur $spread $color);
+  }
+}
+
+@mixin columns($count: 3, $gap: 10px) {
+  @include css3-prefix('column-count', $count);
+  @include css3-prefix('column-gap', $gap);
+}
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+  text-shadow: $x $y $blur $color;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($name: animate, $duration: .4s, $type: ease, $delay : 0s, $count: 1, $direction: normal, $fill: none) {
+  @include css3-prefix('animation', $name $duration $type $delay $count $direction $fill);
+}
+
