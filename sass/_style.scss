@@ -59,11 +59,9 @@ strong.italic {
     color: $colorWhite;
     padding: 0 5px;
   }
-
   &__icon {
     margin-right: 2px;
   }
-
   &__text {
     letter-spacing: 0.16rem;
   }
@@ -77,7 +75,6 @@ button.print__btn {
 a.print__btn {
   text-align: center;
 }
-
 
 ::selection {
   color: $colorWhite;
@@ -98,7 +95,6 @@ a.print__btn {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: $colorGray;
 }
-
 
 body {
   padding-top: 20px;
@@ -125,7 +121,6 @@ body {
   &__block {
     margin-bottom: 10px;
   }
-
   &__about {
     border-bottom: 1px solid $colorMain;
     margin-bottom: 20px;
@@ -138,11 +133,9 @@ body {
   &__block {
     min-height: 200px;
   }
-
   &__photo {
     margin-left: 10px;
   }
-
   &__image {
     border-radius: 50%;
     display: inline-block;
@@ -151,12 +144,10 @@ body {
     width: 180px;
     @include box-shadow(0px, 0px, 36px, -12px, rgba(50, 50, 50, .75));
   }
-
   &__data {
     margin-left: 75px;
     padding-top: 70px;
   }
-
   &__link {
     display: inline-block;
     color: $colorMain;
@@ -167,10 +158,8 @@ body {
 /*left block*/
 .left-block {
   width: 200px;
-
   &__contact {
     min-height: 30px;
-
     &-icon {
       color: $colorMain;
       font-size: 30px;
@@ -178,62 +167,49 @@ body {
       margin-right: 8px;
       vertical-align: top;
       width: 28px;
-
       &-first {
         margin-left: 10px;
       }
     }
-
     &-link,
     &-info {
       color: $colorBlack;
       line-height: 30px;
     }
-
     &-personal {
       font-size: 24px;
     }
-
     &-address {
       margin-left: 38px;
     }
   }
-
   &__text {
     text-indent: 16px;
-
     &-reference {
       margin-bottom: 10px;
     }
   }
-
   &__list-head {
     text-indent: -9999px;
   }
-
   &__item {
     box-sizing: border-box;
     margin-bottom: 22px;
     padding-bottom: 20px;
-
     &:not(:last-child) {
       border-bottom: 1px solid $colorMain;
     }
   }
-
   &__head {
     letter-spacing: 0.16rem;
     margin-bottom: 16px;
   }
-
   &__icon {
     color: $colorMain;
     font-size: 25px;
-
     &_medal {
       margin-bottom: 18px;
     }
-
     &:not(:nth-last-child(-n+3)) {
       margin-bottom: 15px;
     }
@@ -245,14 +221,12 @@ body {
   box-sizing: border-box;
   padding-left: 35px;
   width: calc(100% - 200px);
-
   &__blue-line {
     background-color: $colorMain;
     height: 1px;
     margin-bottom: 15px;
     width: 100%;
   }
-
   &__head {
     background-color: $colorMain;
     color: $colorWhite;
@@ -260,21 +234,17 @@ body {
     padding: 0 5px;
     position: relative;
   }
-
   &__item {
     margin-bottom: 40px;
   }
-
   &__icon {
     left: -20px;
     top: -5px;
     color: $colorMain;
-
     &-inner {
       color: $colorWhite;
     }
   }
-
   &__secondary-head {
     display: inline-block;
     &.logo {
@@ -308,20 +278,12 @@ body {
       background: no-repeat center/contain url("../images/upwork.svg");
     }
   }
-
-  &__secondary-head,
-  &__text {
+  &__secondary-head {
     margin-bottom: 5px;
   }
-
-  &__text {
-    text-indent: 16px;
-  }
-
   &__item {
     margin-bottom: 20px;
     padding-left: 35px;
-
     &:after {
       background-color: $colorMain;
       bottom: 5px;
@@ -331,20 +293,16 @@ body {
       position: absolute;
       width: 1px;
     }
-
     &:last-child:after {
       bottom: 0;
     }
   }
-
   &__article:not(:last-child) {
     margin-bottom: 20px;
   }
-
   &__article-head {
     font-family: 'exoSemiBoldCondensed', sans-serif;
   }
-
   &__foot-date {
     &:before {
       background-color: $colorMain;
@@ -357,22 +315,17 @@ body {
       width: 10px;
     }
   }
-
   &__skills {
     width: 150px;
-
     &:not(:nth-child(3n+1)) {
       margin-right: 15px;
     }
-
     &-personal {
       width: 100%;
     }
-
     &-info {
       padding-left: 18px;
     }
-
     &-icon {
       color: $colorMain;
       font-size: 10px;
@@ -380,17 +333,14 @@ body {
       margin-right: 3px;
       top: 5px;
     }
-
     &:not(:nth-last-child(-n+3)) {
       margin-bottom: 15px;
     }
-
     &-indicator {
       background-color: $colorGray;
       height: 2px;
       width: 100%;
     }
-
     &-percent {
       background-color: $colorMain;
       height: 100%;
@@ -401,82 +351,25 @@ body {
   }
 }
 
-/*portfolio block*/
-.portfolio {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 20px;
-  vertical-align: top;
-  width: 234px;
-
-  &__block {
-    border-bottom: 1px solid $colorMain;
-    padding-bottom: 20px;
-  }
-
-  &__head {
-    margin-bottom: 20px;
-  }
-
-  &__item {
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 200px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 100%;
-    @include bgi('temp/temp-img.png');
-    @include transition-mixin('background');
-
-    &_head {
-      font-family: 'exoSemiBoldCondensed', sans-serif;
-    }
-  }
-
-  &__link {
-    background-color: $colorMain;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    @include transition-mixin('opacity');
-  }
-
-  &__icon {
-    color: $colorWhite;
-    font-size: 24px;
-    right: 16px;
-    top: 16px;
-    @include transition-mixin('opacity', .4s);
-  }
-}
-
 /*up button*/
 .up-button {
   background-color: $colorMain;
-  bottom: 48px;
+  bottom: 30px;
   display: none;
   height: 23px;
   position: fixed;
   right: calc(50% - 430px);
   text-align: center;
   width: 22px;
-
   &:hover .up-button__icon {
     @include animation(shake-up, .4s, ease-in-out, both);
     margin-top: -2px;
   }
-
   &__icon {
     color: $colorWhite;
     font-size: 18px;
     line-height: 23px;
   }
-
   &__link {
     color: $colorMain;
   }
@@ -489,7 +382,6 @@ body {
     opacity: 0;
     @include transform-3d(0, -100%, 0);
   }
-
   to {
     opacity: 1;
     @include transform-3d(0, 0, 0);
@@ -501,11 +393,9 @@ body {
   0% {
     transform: translate3d(0, 0, 0);
   }
-
   33% {
     transform: translate3d(0, -2px, 0);
   }
-
   66% {
     transform: translate3d(0, 0, 0);
   }

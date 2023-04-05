@@ -271,62 +271,6 @@ button {
   transition: opacity 0.4s ease 0s; }
 
 @media only screen and (min-width: 768px) {
-  .portfolio__item:hover {
-    background-image: url("../images/temp/temp-img-2.jpg");
-    background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_form {
-      background-image: url("../images/temp/form-css.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_email {
-      background-image: url("../images/temp/email-html.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_projex {
-      background-image: url("../images/temp/projex-css.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_notify {
-      background-image: url("../images/temp/notify-css.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_waxom {
-      background-image: url("../images/temp/waxom-sass.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_reparin {
-      background-image: url("../images/temp/reparin-responsive.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_game {
-      background-image: url("../images/temp/gamegleam-landing.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_mike {
-      background-image: url("../images/temp/mikeregina-bootstrap3.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_mavent {
-      background-image: url("../images/temp/mavent.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_escape {
-      background-image: url("../images/temp/escape-bootstrap4.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_cont {
-      background-image: url("../images/temp/continually.png");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_owl {
-      background-image: url("../images/temp/owl.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_render {
-      background-image: url("../images/temp/render.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_teach {
-      background-image: url("../images/temp/teach.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_seriea {
-      background-image: url("../images/temp/seriea.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_pairs {
-      background-image: url("../images/temp/pairs.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover.portfolio__item_vii {
-      background-image: url("../images/temp/vii.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item:hover .portfolio__link {
-      opacity: .7; }
   .left-block__contact-link:hover .left-block__contact-icon,
   .left-block__icon:hover .right-block__icon-inner,
   .right-block__icon:hover .right-block__icon-inner,
@@ -606,10 +550,8 @@ body {
       background: no-repeat center/contain url("../images/cont.jpg"); }
     .right-block__secondary-head.logo-up:before {
       background: no-repeat center/contain url("../images/upwork.svg"); }
-  .right-block__secondary-head, .right-block__text {
+  .right-block__secondary-head {
     margin-bottom: 5px; }
-  .right-block__text {
-    text-indent: 16px; }
   .right-block__item {
     margin-bottom: 20px;
     padding-left: 35px; }
@@ -667,64 +609,10 @@ body {
       -o-transition: width 0.4s linear 0s;
       transition: width 0.4s linear 0s; }
 
-/*portfolio block*/
-.portfolio {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 20px;
-  vertical-align: top;
-  width: 234px; }
-  .portfolio__block {
-    border-bottom: 1px solid #28b0bb;
-    padding-bottom: 20px; }
-  .portfolio__head {
-    margin-bottom: 20px; }
-  .portfolio__item {
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 200px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 100%;
-    background-image: url("../images/temp/temp-img.png");
-    background-repeat: no-repeat;
-    -webkit-transition: background 0.4s ease 0s;
-    -moz-transition: background 0.4s ease 0s;
-    -ms-transition: background 0.4s ease 0s;
-    -o-transition: background 0.4s ease 0s;
-    transition: background 0.4s ease 0s; }
-    .portfolio__item_head {
-      font-family: 'exoSemiBoldCondensed', sans-serif; }
-  .portfolio__link {
-    background-color: #28b0bb;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    -webkit-transition: opacity 0.4s ease 0s;
-    -moz-transition: opacity 0.4s ease 0s;
-    -ms-transition: opacity 0.4s ease 0s;
-    -o-transition: opacity 0.4s ease 0s;
-    transition: opacity 0.4s ease 0s; }
-  .portfolio__icon {
-    color: #fff;
-    font-size: 24px;
-    right: 16px;
-    top: 16px;
-    -webkit-transition: opacity 0.4s ease 0s;
-    -moz-transition: opacity 0.4s ease 0s;
-    -ms-transition: opacity 0.4s ease 0s;
-    -o-transition: opacity 0.4s ease 0s;
-    transition: opacity 0.4s ease 0s; }
-
 /*up button*/
 .up-button {
   background-color: #28b0bb;
-  bottom: 48px;
+  bottom: 30px;
   display: none;
   height: 23px;
   position: fixed;
@@ -876,91 +764,34 @@ body {
     -ms-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
     -o-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4); }
-  .print__block {
-    display: none; }
-  .main__about {
-    padding-bottom: 200px; }
-  .left-block__item-personal {
-    margin-bottom: 70px; }
-  .right-block__article-print {
-    padding-bottom: 40px; }
-  .right-block__item {
-    margin-bottom: 40px; }
-  .portfolio__item {
-    height: 140px; }
-    .portfolio__item.portfolio__item_form {
-      background-image: url("../images/temp/form-css.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_email {
-      background-image: url("../images/temp/email-html.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_projex {
-      background-image: url("../images/temp/projex-css.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_notify {
-      background-image: url("../images/temp/notify-css.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_waxom {
-      background-image: url("../images/temp/waxom-sass.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_reparin {
-      background-image: url("../images/temp/reparin-responsive.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_game {
-      background-image: url("../images/temp/gamegleam-landing.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_mike {
-      background-image: url("../images/temp/mikeregina-bootstrap3.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_mavent {
-      background-image: url("../images/temp/mavent.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_escape {
-      background-image: url("../images/temp/escape-bootstrap4.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_cont {
-      background-image: url("../images/temp/continually.png");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_owl {
-      background-image: url("../images/temp/owl.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_seriea {
-      background-image: url("../images/temp/seriea.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_pairs {
-      background-image: url("../images/temp/pairs.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item.portfolio__item_vii {
-      background-image: url("../images/temp/vii.jpg");
-      background-repeat: no-repeat; }
-    .portfolio__item .portfolio__link {
-      opacity: .7; }
-    .portfolio__item .portfolio__icon {
-      opacity: 1; }
+  .print__block,
   .up-button {
-    opacity: 0; } }
+    display: none;
+    opacity: 0; }
+  .left-block__item-personal {
+    margin-bottom: 160px; }
+  .left-block__item {
+    padding-top: 8px; }
+  .right-block__head-block {
+    padding-top: 2px; }
+  .right-block__item {
+    margin-bottom: 40px; } }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
   .wrapper {
     padding-left: 20px;
-    padding-right: 20px; } }
-
-@media only screen and (max-width: 913px) {
+    padding-right: 20px; }
   .container {
     width: 100%; }
   .wrapper {
     width: 755px; }
   .right-block__skills {
     width: 125px; }
-  .portfolio {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 219px; } }
-
-@media only screen and (max-width: 900px) {
   .up-button {
-    bottom: 13px;
-    right: calc(50% - 358px); } }
+    bottom: 30px;
+    right: calc(50% - 358px); }
+  .print__block {
+    text-align: initial; } }
 
 @media only screen and (max-width: 767px) {
   .wrapper {
@@ -1001,75 +832,10 @@ body {
     .right-block__skills {
       width: 100%;
       margin: 0 0 10px !important; }
-  .portfolio__item.portfolio__item_form {
-    background-image: url("../images/temp/form-css.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_email {
-    background-image: url("../images/temp/email-html.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_projex {
-    background-image: url("../images/temp/projex-css.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_notify {
-    background-image: url("../images/temp/notify-css.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_waxom {
-    background-image: url("../images/temp/waxom-sass.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_reparin {
-    background-image: url("../images/temp/reparin-responsive.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_game {
-    background-image: url("../images/temp/gamegleam-landing.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_mike {
-    background-image: url("../images/temp/mikeregina-bootstrap3.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_mavent {
-    background-image: url("../images/temp/mavent.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_escape {
-    background-image: url("../images/temp/escape-bootstrap4.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_cont {
-    background-image: url("../images/temp/continually.png");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_owl {
-    background-image: url("../images/temp/owl.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_render {
-    background-image: url("../images/temp/render.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_teach {
-    background-image: url("../images/temp/teach.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_seriea {
-    background-image: url("../images/temp/seriea.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_pairs {
-    background-image: url("../images/temp/pairs.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item.portfolio__item_vii {
-    background-image: url("../images/temp/vii.jpg");
-    background-repeat: no-repeat; }
-  .portfolio__item:before {
-    opacity: .7; }
-  .portfolio__item .portfolio__icon {
-    opacity: 1; }
-  .portfolio {
-    display: block;
-    margin: 0 auto 15px;
-    max-width: 100%;
-    padding: 0;
-    width: 420px; }
-    .portfolio__link {
-      opacity: 0.7; }
   .up-button {
     right: 35px; } }
 
 @media only screen and (max-width: 480px) {
-  .portfolio {
-    width: 100%; }
   .main__block {
     margin-bottom: 10px; } }
 
