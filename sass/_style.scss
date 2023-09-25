@@ -303,6 +303,13 @@ body {
   &__article-head {
     font-family: 'exoSemiBoldCondensed', sans-serif;
   }
+  &__article-subhead {
+    color: $colorMain;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    text-indent: 20px;
+  }
   &__foot-date {
     &:before {
       background-color: $colorMain;

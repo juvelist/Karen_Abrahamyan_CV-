@@ -569,6 +569,12 @@ body {
     margin-bottom: 20px; }
   .right-block__article-head {
     font-family: 'exoSemiBoldCondensed', sans-serif; }
+  .right-block__article-subhead {
+    color: #28b0bb;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    text-indent: 20px; }
   .right-block__foot-date:before {
     background-color: #28b0bb;
     bottom: 3px;
