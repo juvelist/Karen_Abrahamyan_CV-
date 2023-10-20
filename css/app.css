@@ -347,6 +347,9 @@ body, select, option, button, textarea {
 strong, b {
   font-weight: normal; }
 
+p > b {
+  font-family: 'exoSemiBoldCondensed', sans-serif; }
+
 i, em {
   font-style: normal; }
 
