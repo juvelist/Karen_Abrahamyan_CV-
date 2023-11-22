@@ -85,21 +85,6 @@ a.print__btn {
   background-color: $colorMain;
 }
 
-::-webkit-scrollbar {
-  width: 13px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  background-color: #888;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: $colorGray;
-}
-
 body {
   padding-top: 20px;
   background-attachment: fixed;
@@ -308,6 +293,7 @@ body {
   }
   &__article-head {
     font-family: 'exoSemiBoldCondensed', sans-serif;
+    margin-bottom: 2px;
   }
   &__article-subhead {
     color: $colorMain;
@@ -329,9 +315,15 @@ body {
     }
   }
   &__skills {
-    width: 150px;
-    &:not(:nth-child(3n+1)) {
-      margin-right: 15px;
+    &-text {
+      border-bottom: 1px solid $colorMain;
+      width: 150px;
+      &:not(:nth-child(3n+1)) {
+        margin-right: 15px;
+      }
+      &:not(:nth-last-child(-n+3)) {
+        margin-bottom: 15px;
+      }
     }
     &-personal {
       width: 100%;
@@ -345,21 +337,6 @@ body {
       left: 0;
       margin-right: 3px;
       top: 5px;
-    }
-    &:not(:nth-last-child(-n+3)) {
-      margin-bottom: 15px;
-    }
-    &-indicator {
-      background-color: $colorGray;
-      height: 2px;
-      width: 100%;
-    }
-    &-percent {
-      background-color: $colorMain;
-      height: 100%;
-      left: 0;
-      top: 0;
-      @include transition-mixin(width, .4s, linear);
     }
   }
 }
