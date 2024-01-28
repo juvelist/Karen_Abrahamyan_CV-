@@ -175,7 +175,9 @@ body {
     }
   }
   &__text {
-    text-indent: 16px;
+    & > span {
+      text-indent: 16px;
+    }
     &-reference {
       margin-bottom: 10px;
     }
@@ -185,8 +187,8 @@ body {
   }
   &__item {
     box-sizing: border-box;
-    margin-bottom: 22px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
     &:not(:last-child) {
       border-bottom: 1px solid $colorMain;
     }

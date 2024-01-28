@@ -472,16 +472,16 @@ body {
       line-height: 30px; }
     .left-block__contact-personal {
       font-size: 24px; }
-  .left-block__text {
+  .left-block__text > span {
     text-indent: 16px; }
-    .left-block__text-reference {
-      margin-bottom: 10px; }
+  .left-block__text-reference {
+    margin-bottom: 10px; }
   .left-block__list-head {
     text-indent: -9999px; }
   .left-block__item {
     box-sizing: border-box;
-    margin-bottom: 22px;
-    padding-bottom: 20px; }
+    margin-bottom: 20px;
+    padding-bottom: 18px; }
     .left-block__item:not(:last-child) {
       border-bottom: 1px solid #3786a1; }
   .left-block__head {
