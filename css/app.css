@@ -428,7 +428,7 @@ body {
   margin-left: 10px; }
 
 .head__image {
-  border-radius: 30px;
+  border-radius: 16px;
   display: inline-block;
   height: 180px;
   object-fit: cover;
@@ -743,6 +743,7 @@ body {
 @media print {
   body {
     background-color: #fff;
+    background-image: none;
     padding-top: 0; }
   .main__about {
     margin-bottom: 0;
@@ -758,7 +759,7 @@ body {
     display: none;
     opacity: 0; }
   .left-block__item-contacts {
-    margin-bottom: 80px; }
+    margin-bottom: 240px; }
   .left-block__item {
     padding-top: 8px; }
   .right-block__head-block {

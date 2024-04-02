@@ -1,6 +1,7 @@
 @media print {
   body {
     background-color: #fff;
+    background-image: none;
     padding-top: 0;
   }
   .main__about {
@@ -16,7 +17,7 @@
     opacity: 0;
   }
   .left-block__item-contacts {
-    margin-bottom: 80px;
+    margin-bottom: 240px;
   }
   .left-block__item {
     padding-top: 8px;
