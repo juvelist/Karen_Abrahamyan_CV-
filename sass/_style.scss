@@ -113,7 +113,6 @@ body {
   }
   &__about {
     margin-bottom: 20px;
-    padding-bottom: 20px;
   }
 }
 
@@ -156,7 +155,7 @@ body {
       color: $colorMain;
       font-size: 30px;
       height: auto;
-      text-align: left;
+      text-align: center;
       vertical-align: top;
       width: 28px;
       &-first {
@@ -187,7 +186,7 @@ body {
   }
   &__item {
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-bottom: 18px;
     &:not(:last-child) {
       border-bottom: 1px solid $colorMain;
@@ -195,7 +194,7 @@ body {
   }
   &__head {
     letter-spacing: 0.16rem;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
   &__icon {
     color: $colorMain;
@@ -217,7 +216,7 @@ body {
   &__blue-line {
     background-color: $colorMain;
     height: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 100%;
   }
   &__head {
