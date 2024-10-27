@@ -530,6 +530,8 @@ body {
         width: 24px;
         left: 0;
         top: 1px; }
+    .right-block__secondary-head.logo-soft:before {
+      background: no-repeat center/contain url("../images/soft.svg"); }
     .right-block__secondary-head.logo-render:before {
       background: no-repeat center/contain url("../images/renderforest.svg"); }
     .right-block__secondary-head.logo-teach:before {
@@ -765,7 +767,7 @@ body {
   .right-block__head-block {
     padding-top: 2px; }
   .right-block__item {
-    margin-bottom: 60px; } }
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 1024px) {
   .wrapper {

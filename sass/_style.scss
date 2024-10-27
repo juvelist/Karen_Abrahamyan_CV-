@@ -251,6 +251,9 @@ body {
         top: 1px;;
       }
     }
+    &.logo-soft:before {
+      background: no-repeat center/contain url("../images/soft.svg");
+    }
     &.logo-render:before {
       background: no-repeat center/contain url("../images/renderforest.svg");
     }
