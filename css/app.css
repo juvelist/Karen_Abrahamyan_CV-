@@ -350,11 +350,9 @@ strong, b {
 p > b {
   font-family: 'exoSemiBoldCondensed', sans-serif; }
 
-i, em {
-  font-style: normal; }
-
 i.fb,
-em.fb {
+em.fb,
+em.fi {
   font-style: italic; }
 
 strong.italic {
