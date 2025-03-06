@@ -426,7 +426,7 @@ body {
   margin-left: 10px; }
 
 .head__image {
-  border-radius: 16px;
+  border-radius: 50%;
   display: inline-block;
   height: 180px;
   object-fit: cover;
